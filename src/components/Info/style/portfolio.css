@@ -4,6 +4,9 @@
 }
 .portfolio-container {
   background-color: var(--background-color);
+  background-color: var(--background-color);
+  background-image: url('https://sergiofrancodev.com/bg-paterns.png');
+  background-size: cover;
   max-width: 900px;
   min-height: 500px;
   border-radius: 10px;

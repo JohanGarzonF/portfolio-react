@@ -15,7 +15,7 @@ const Header = () => {
   }
 
   return (
-    <header className='header '>
+    <header className='header' id='/'>
       <nav className='header-navbar container'>
         <h1 className='navbar-title'><a href='#/'>&#123; J<span>ohann</span>Dev &#125;</a></h1>
         <div onClick={clickNav} className="navbar_hamb">

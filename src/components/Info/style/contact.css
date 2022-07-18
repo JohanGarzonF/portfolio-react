@@ -1,0 +1,49 @@
+.contact {
+  min-height: 100px;
+  background-color: var(--background-color);
+  background-color: var(--background-color);
+  background-image: url('https://sergiofrancodev.com/bg-paterns.png');
+  background-size: cover;
+  padding: 20px;
+}
+.container-contact {
+  background-color: var(--background-color);
+  background-color: var(--background-color);
+  background-image: url('https://sergiofrancodev.com/bg-paterns.png');
+  background-size: cover;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  margin: 0 auto;
+  padding: 20px;
+}
+.contact-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.container-contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.contact-icons {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  height: 80px;
+  aspect-ratio: 1;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}

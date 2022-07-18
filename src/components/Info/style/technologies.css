@@ -14,6 +14,9 @@
   min-height: 100px;
   max-width: 900px;
 }
+.tech-container:hover {
+  transform: scale(1.02);
+}
 .tech-images {
   display: flex;
   justify-content: center;
@@ -25,14 +28,14 @@
 .tech-img-container {
   width: 100px;
   height: 120px;
-  animation-name: moveimg;
-  animation-duration: 200ms;
-  animation-timing-function: ease-in;
 }
 .tech-images li {
   text-align: center;
 }
 .tech-img {
+  animation-name: moveimg;
+  animation-duration: 600ms;
+  animation-timing-function: linear;
   width: 100%;
   max-width: 300px;
 }

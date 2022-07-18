@@ -42,7 +42,7 @@ const PortfolioScreen = () => {
             <div className="back-card">
               <div className="body-back-card">
                 <p>Te invito a ver esta App donde usé un CRUD con Axios, Create, Read, Update y Delete</p>
-                <a href="https://crudofusers-johand-garzf.netlify.app/" target='blanck'>Go to App</a>
+                <a href="https://crudofusers-johand-garzf.netlify.app/" target='blanck'>Ir a la App</a>
               </div>
             </div>
           </article>
