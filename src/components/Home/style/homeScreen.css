@@ -1,0 +1,91 @@
+.home {
+  background-color: var(--background-color);
+  background-image: url('https://sergiofrancodev.com/bg-paterns.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  position: relative;
+}
+.home-container {
+  padding-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  min-height: 80vh;
+  overflow: hidden;
+  position: relative;
+}
+.home-img-container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 50%;
+  margin-bottom: 40px;
+}
+.home-img {
+  background-image: url('../../../assets/img/photo2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  aspect-ratio: 1;
+  width: 80%;
+  max-width: 250px;
+  margin: 20px 0;
+  position: relative;
+  bottom: 0;
+  animation: move 3s linear infinite;
+}
+@keyframes move{
+  0% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+.home-title-container {
+  text-align: center;
+  width: 100%;
+  height: max-content;
+  position: relative;
+}
+.small-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.large-title {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.home-description{
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.home-cv {
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  border: solid 1px #3444f6;
+  border-radius: 10px;
+  padding: 10px;
+}
+.home-cv:hover {
+  box-shadow: var(--shadow);
+}
+@media (min-width: 400px) {
+  .small-title {
+    font-size: 1.8rem;
+  }
+  .large-title {
+    font-size: 2.5rem;
+  }
+  .home-description{
+    font-size: 1.2rem;
+  }
+}

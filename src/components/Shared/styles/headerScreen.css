@@ -1,0 +1,124 @@
+.header {
+  height: 90px;
+  background-color: var(--secondary-color);
+}
+.header-navbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+}
+.navbar-title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--primary-color);
+  box-shadow: 0 0 15px 0 #3444f6;
+  padding: 5px;
+  border-radius: 10px;
+  animation: movetitle 800ms linear;
+  position: relative;
+  left: 0;
+}
+@keyframes movetitle {
+  0%{
+    opacity: 0;
+    left: -20%;
+  }
+  50%{
+    opacity: 0.4;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.navbar-title span {
+  color: #3444f6;
+}
+.navbar_hamb {
+  color: var(--primary-color);
+  position: relative;
+  font-size: 1.4rem;
+  z-index: 3;
+  cursor: pointer;
+}
+.navbar-list {
+  z-index: 3;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(90%, 600px);
+  height: 0px;
+  position: absolute;
+  top: 105px;
+  left: 50%;
+  transform: translate(-50%);
+  overflow: hidden;
+  transition: all 500ms ease;
+}
+.navbar-list li {
+  width: 100%;
+  text-align: center;
+}
+.nav-open {
+  height: 220px;
+  padding: 10px 0;
+  transition: all 550ms ease;
+}
+.navbar-link {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 10px;
+}
+.navbar-link:hover{
+  background-color: #292e4d;
+  color: #3444f6;
+  box-shadow: 0 0 15px 0 #3444f6;
+  transition: padding-left 400ms ease;
+}
+@media (min-width: 400px) {
+  .header-navbar{
+    padding: 0 40px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar_hamb {
+    display: none;
+  }
+  .nav-open {
+    transform: translate(0);
+    transition-duration: 0ms;
+  }
+  .navbar-list{
+    overflow: initial;
+    position: static;
+    flex-direction: initial;
+    width: auto;
+    height: auto;
+    gap: 15px;
+    color: rgb(0, 0, 0);
+    transform: translate(0);
+    transition-duration: 0ms;
+  }
+  .navbar-list li {
+    width: auto;
+    animation: movetitle 4s linear;
+  }
+  .navbar-link {
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--primary-color);
+    transition: all 400ms ease;
+  }
+  .navbar-link:hover{
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 15px 0 #3444f6;
+    color: #3444f6;
+    transition: all 400ms ease;
+  }
+}

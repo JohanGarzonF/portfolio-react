@@ -1,0 +1,83 @@
+.portfolio {
+  background-color: var(--secondary-color);
+  padding: 20px;
+}
+.portfolio-container {
+  background-color: var(--background-color);
+  max-width: 900px;
+  min-height: 500px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 10px;
+}
+.portfolio-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.portfolio-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+  perspective: 1000px;
+}
+.portfolio-card {
+  text-align: center;
+  width: 95%;
+  max-width: 350px;
+  height: 250px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 600ms;
+  perspective: 1000px;
+}
+.portfolio-card:hover {
+  transform: rotateY(180deg);
+}
+.front-card,
+.back-card {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+.portfolio-card .front-card {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.back-card {
+  transform: rotateY(180deg);
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+}
+.body-back-card {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateZ(60px);
+}
+.body-back-card a {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  font-size: .8rem;
+}
+.body-back-card a:hover {
+  box-shadow: var(--shadow);
+}

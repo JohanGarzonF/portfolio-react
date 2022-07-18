@@ -1,0 +1,51 @@
+.technologies {
+  background-color: var(--background-color);
+  background-image: url('https://sergiofrancodev.com/bg-paterns.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+}
+.tech-container {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 95%;
+  min-height: 100px;
+  max-width: 900px;
+}
+.tech-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 600px;
+  gap: 40px;
+  margin: 0 auto;
+}
+.tech-img-container {
+  width: 100px;
+  height: 120px;
+  animation-name: moveimg;
+  animation-duration: 200ms;
+  animation-timing-function: ease-in;
+}
+.tech-images li {
+  text-align: center;
+}
+.tech-img {
+  width: 100%;
+  max-width: 300px;
+}
+.tech-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+} 
+@keyframes moveimg {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100px;
+  }
+}

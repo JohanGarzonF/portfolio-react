@@ -1,0 +1,23 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #1f2233;
+  --margin-bottom: 20px;
+  --background-color: #0e0e15;
+  --shadow: 0 0 15px 0 #3444f6;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 5px;
+}
+@media (min-width: 400px) {
+  .container {
+    padding: 0 10px ;
+  }
+}
+@media (min-width: 776px) {
+  .container {
+    padding: 0 20px;
+  }
+}

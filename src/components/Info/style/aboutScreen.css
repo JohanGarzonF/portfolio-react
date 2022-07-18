@@ -1,0 +1,27 @@
+.aboutme {
+  background-color: var(--secondary-color);
+  position: relative;
+  min-height: 300px;
+  padding: 20px 0;
+}
+.aboutme-container {
+  background-color: var(--background-color);
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 95%;
+  min-height: 100px;
+  max-width: 900px;
+}
+.aboutme-title {  
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.aboutme-text {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-size: 1.1rem;
+}
