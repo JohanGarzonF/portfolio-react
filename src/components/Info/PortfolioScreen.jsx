@@ -38,18 +38,6 @@ const PortfolioScreen = () => {
           <article className='portfolio-card'>
             <div 
               className="front-card" 
-              style={{backgroundImage: `url(${crud})`}}>
-            </div>
-            <div className="back-card">
-              <div className="body-back-card">
-                <p>Te invito a ver esta App donde usé un CRUD con Axios, Create, Read, Update y Delete</p>
-                <a href="https://crudofusers-johand-garzf.netlify.app/" target='blank'>Ir a la App</a>
-              </div>
-            </div>
-          </article>
-          <article className='portfolio-card'>
-            <div 
-              className="front-card" 
               style={{backgroundImage: `url(${todolist})`}}>
             </div>
             <div className="back-card">
