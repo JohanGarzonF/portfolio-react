@@ -19,7 +19,7 @@ const FooterScreen = () => {
             </li>
           </ul>
           <p className='footer-text'>&copy; Johan Garzon Developer.</p>
-          <p className='footer-text'>All rights reserved / 2022.</p>
+          <p className='footer-text'>All rights reserved 2022.</p>
         </div>
       </div>
     </footer>

@@ -2,6 +2,7 @@ import React from 'react'
 import pokedex from '../../assets/img/pokedex.jpg'
 import rickandmorty from '../../assets/img/rickandmorty.png'
 import crud from '../../assets/img/crud.jpg'
+import todolist from '../../assets/img/to-do-list.png'
 import './style/portfolio.css'
 
 const PortfolioScreen = () => {
@@ -18,7 +19,7 @@ const PortfolioScreen = () => {
             <div className="back-card">
               <div className="body-back-card" style={{paddingLeft: '20px'}}>
                 <p>Te gustaría conocer mi Pokedex, uso la API de pokemons y también pongo en prática todas las tecnologías anteriores</p>
-                <a href="https://pokeapi-johangarz.netlify.app/#/" target='blanck'>Ir a la App</a>
+                <a href="https://pokeapi-johangarz.netlify.app/#/" target='blank'>Ir a la App</a>
               </div>
             </div>
           </article>
@@ -30,7 +31,7 @@ const PortfolioScreen = () => {
             <div className="back-card">
               <div className="body-back-card" style={{paddingRight: '30px'}}>
                 <p>En este proyecto puse en practica los custom hook y llamada a las API's</p>
-                <a href="https://rickandmorty-johandangarz.netlify.app/" target='blanck'>Ir a la App</a>
+                <a href="https://rickandmorty-johandangarz.netlify.app/" target='blank'>Ir a la App</a>
               </div>
             </div>
           </article>
@@ -42,7 +43,19 @@ const PortfolioScreen = () => {
             <div className="back-card">
               <div className="body-back-card">
                 <p>Te invito a ver esta App donde usé un CRUD con Axios, Create, Read, Update y Delete</p>
-                <a href="https://crudofusers-johand-garzf.netlify.app/" target='blanck'>Ir a la App</a>
+                <a href="https://crudofusers-johand-garzf.netlify.app/" target='blank'>Ir a la App</a>
+              </div>
+            </div>
+          </article>
+          <article className='portfolio-card'>
+            <div 
+              className="front-card" 
+              style={{backgroundImage: `url(${todolist})`}}>
+            </div>
+            <div className="back-card">
+              <div className="body-back-card">
+                <p>Te invito a ver esta App donde pongo en práctica mi refuerzo de conceptos de React con Platzi, aquí uso render functions y render props</p>
+                <a href="https://to-do-list-jgarz.netlify.app" target='blank'>Ir a la App</a>
               </div>
             </div>
           </article>
