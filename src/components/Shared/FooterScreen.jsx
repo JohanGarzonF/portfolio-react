@@ -9,7 +9,7 @@ const FooterScreen = () => {
           <ul className='icons-footer'>
             <li>
               <a href="https://www.linkedin.com/in/johan-danilo-garz%C3%B3n-forero-056856234/">
-                <i class="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-linkedin"></i>
               </a>
             </li>
             <li>

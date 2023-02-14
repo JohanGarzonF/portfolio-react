@@ -49,6 +49,9 @@
   left: 0;
   backface-visibility: hidden;
   transform-style: preserve-3d;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
 }
 .portfolio-card .front-card {
   background-position: center;
